@@ -774,6 +774,7 @@ DATA.forEach(d => {
   else if (/코너/.test(specPart)) d._specCat = '코너';
   else if (/암리스/.test(specPart)) d._specCat = '암리스';
   else if (/싱글라운지/.test(specPart)) d._specCat = '2인';
+  else if (/오픈 라운지/.test(specPart)) d._specCat = '2인';  
   else if (/데이베드/.test(specPart)) d._specCat = '데이베드';
   else if (/싱글\s*베드|싱글베드/.test(specPart)) d._specCat = '싱글베드';
   else if (d.사양 && /암리스/.test(d.사양)) d._specCat = '암리스';
