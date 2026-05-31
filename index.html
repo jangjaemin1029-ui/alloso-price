@@ -966,7 +966,7 @@ function refreshFilters() {
   pruneSel(selMaterial, availMaterials);
   pruneSel(selGrade, availGrades);
 
-  buildChips(document.getElementById('seriesChips'), availSeries, selSeries);
+  buildChips(document.getElementById('seriesChips'), withSlashBeforeGita(availSeries), selSeries);
   buildChips(document.getElementById('specChips'), withSlashBeforeGita(availSpecs), selSpec, refreshArticleChips);
   buildChips(document.getElementById('materialChips'), withSlashBeforeGita(availMaterials), selMaterial, refreshArticleChips);
   buildChips(document.getElementById('gradeChips'), withSlashBeforeGita(availGrades), selGrade, refreshArticleChips);
