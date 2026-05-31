@@ -909,6 +909,8 @@ function sortSpecs(arr){
 }
 function sortSeries(arr){
   return arr.slice().sort((a,b)=>{
+    if (a==='기타') return 1;
+    if (b==='기타') return -1;
     const ia = seriesOrder.indexOf(a), ib = seriesOrder.indexOf(b);
     if (ia!==-1 && ib!==-1) return ia-ib;
     if (ia!==-1) return -1;
