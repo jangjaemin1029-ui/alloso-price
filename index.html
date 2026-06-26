@@ -792,7 +792,7 @@ DATA.forEach(d => {
 });
 
 // Build filter options
-const seriesOrder = ['카포네','카포네 그랑','보눔OP','보눔FU','케렌시아','사티','사티모션','사티 큐브','홀리데이','홀리데이 미니','에브리데이','바드','비하르','로바','클렉트','레지나','밀로','스탠','테오'];
+const seriesOrder = ['카포네','카포네 그랑','보눔OP','보눔FU','케렌시아','사티','사티모션','사티 큐브','홀리데이','홀리데이 미니','바드','비하르','로바','클렉트','레지나','밀로','스탠','테오'];
 const allSeries = [...new Set(DATA.map(d=>d['시리즈']))].sort((a,b)=>{
   const ia = seriesOrder.indexOf(a), ib = seriesOrder.indexOf(b);
   if (ia!==-1 && ib!==-1) return ia-ib;
